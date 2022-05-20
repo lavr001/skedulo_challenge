@@ -10,11 +10,49 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <title>Skedulo</title>
   </head>
   <body>
     <main>
-      <h1>Skedulo Challenge</h1>
+      <div class="new_employee_box">
+        <button type="button" class="add_employee">Add New Employee</button>
+        <div class="employee_info_box">
+          <div class="info_row">
+            <div class="field_box">
+              <label for="fname">First name</label>
+              <input type="text" name="fname" />
+            </div>
+            <div class="field_box">
+              <label for="lname">Last name</label>
+              <input type="text" name="lname" />
+            </div>
+          </div>
+          <div class="info_row">
+            <div class="field_box">
+              <label for="title">Title</label>
+              <input type="text" name="title" />
+            </div>
+            <div class="field_box">
+              <label for="manager">Manager</label>
+              <input type="text" name="manager" />
+            </div>
+          </div>
+          <div class="info_row">
+            <div class="field_box">
+              <label for="department">Department</label>
+              <input type="text" name="department" />
+            </div>
+            <div class="field_box">
+              <label for="email">Email</label>
+              <input type="email" name="email" />
+            </div>
+          </div>
+          <div class="buttons">
+            <button type="button" class="cancel">Cancel</button>
+            <button type="button" class="save">Add Employee</button>
+          </div>
+        </div>
+      </div>
     </main>
     <script src="./script.js"></script>
   </body>
