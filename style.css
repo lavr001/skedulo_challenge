@@ -16,3 +16,111 @@ input,
 button {
   font-family: "Lato", sans-serif;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e2e2e2;
+}
+
+.new_employee_box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  height: 12vh;
+  margin-top: 8vh;
+  background-color: #a978e9;
+  border-radius: 6px;
+}
+
+.new_employee_box button {
+  padding: 2% 4%;
+  background-color: #5e0a71;
+  color: #fff;
+  border: none;
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #41004f;
+}
+
+.employee_info_box {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 4% 2%;
+  background-color: #a978e9;
+  border-radius: 6px;
+}
+
+.employee_info_box.show {
+  display: flex;
+}
+
+.info_row {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-bottom: 2%;
+}
+
+.field_box {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 2%;
+}
+
+input[type="text"],
+input[type="email"] {
+  border: none;
+  border-radius: 4px;
+  padding: 3% 6%;
+  font-size: 16px;
+}
+
+.buttons {
+  width: 90%;
+  display: flex;
+  justify-content: right;
+}
+
+.buttons .save,
+.buttons .cancel {
+  margin-top: 6%;
+}
+
+.buttons .cancel {
+  border: 2px solid #5e0a71;
+  background-color: #a978e9;
+  color: #5e0a71;
+  font-weight: 700;
+}
+
+.buttons .cancel:active {
+  border: 2px solid #41004f;
+  color: #41004f;
+}
+
+.buttons .save {
+  margin-left: 4%;
+}
