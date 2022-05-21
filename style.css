@@ -25,7 +25,6 @@ main {
 }
 
 .new_employee_box {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,7 +35,11 @@ main {
   border-radius: 6px;
 }
 
-.new_employee_box button {
+.new_employee_box.hide {
+  display: none;
+}
+
+button {
   padding: 2% 4%;
   background-color: #5e0a71;
   color: #fff;
@@ -48,6 +51,7 @@ main {
 
 button:hover {
   cursor: pointer;
+  background-color: #41004f;
 }
 
 button:active {
@@ -56,12 +60,10 @@ button:active {
 
 .employee_info_box {
   display: none;
-  position: absolute;
   flex-direction: column;
   align-items: center;
-  top: 0;
-  left: 0;
-  width: 100%;
+  width: 60vw;
+  margin-top: 8vh;
   padding: 4% 2%;
   background-color: #a978e9;
   border-radius: 6px;
@@ -116,6 +118,7 @@ input[type="email"] {
   font-weight: 700;
 }
 
+.buttons .cancel:hover,
 .buttons .cancel:active {
   border: 2px solid #41004f;
   color: #41004f;
@@ -123,4 +126,13 @@ input[type="email"] {
 
 .buttons .save {
   margin-left: 4%;
+}
+
+.employee_details {
+  width: 60vw;
+  margin-top: 2vh;
+  padding: 1% 2%;
+  background-color: #5e0a71;
+  border-radius: 6px;
+  color: #fff;
 }

@@ -16,43 +16,43 @@
     <main>
       <div class="new_employee_box">
         <button type="button" class="add_employee">Add New Employee</button>
-        <div class="employee_info_box">
-          <div class="info_row">
-            <div class="field_box">
-              <label for="fname">First name</label>
-              <input type="text" name="fname" />
-            </div>
-            <div class="field_box">
-              <label for="lname">Last name</label>
-              <input type="text" name="lname" />
-            </div>
+      </div>
+      <form class="employee_info_box">
+        <div class="info_row">
+          <div class="field_box">
+            <label for="fname">First name</label>
+            <input type="text" name="fname" class="first_name" />
           </div>
-          <div class="info_row">
-            <div class="field_box">
-              <label for="title">Title</label>
-              <input type="text" name="title" />
-            </div>
-            <div class="field_box">
-              <label for="manager">Manager</label>
-              <input type="text" name="manager" />
-            </div>
-          </div>
-          <div class="info_row">
-            <div class="field_box">
-              <label for="department">Department</label>
-              <input type="text" name="department" />
-            </div>
-            <div class="field_box">
-              <label for="email">Email</label>
-              <input type="email" name="email" />
-            </div>
-          </div>
-          <div class="buttons">
-            <button type="button" class="cancel">Cancel</button>
-            <button type="button" class="save">Add Employee</button>
+          <div class="field_box">
+            <label for="lname">Last name</label>
+            <input type="text" name="lname" class="last_name" />
           </div>
         </div>
-      </div>
+        <div class="info_row">
+          <div class="field_box">
+            <label for="title">Title</label>
+            <input type="text" name="title" class="title" />
+          </div>
+          <div class="field_box">
+            <label for="manager">Manager</label>
+            <input type="text" name="manager" class="manager" />
+          </div>
+        </div>
+        <div class="info_row">
+          <div class="field_box">
+            <label for="department">Department</label>
+            <input type="text" name="department" class="department" />
+          </div>
+          <div class="field_box">
+            <label for="email">Email</label>
+            <input type="email" name="email" class="email" />
+          </div>
+        </div>
+        <div class="buttons">
+          <button type="button" class="cancel">Cancel</button>
+          <button type="button" class="save">Add Employee</button>
+        </div>
+      </form>
     </main>
     <script src="./script.js"></script>
   </body>
