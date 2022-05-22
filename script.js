@@ -23,24 +23,33 @@ document.querySelector(".save").onclick = () => {
   let lastName = document.querySelector(".last_name").value;
   let title = document.querySelector(".title").value;
   let manager = document.querySelector(".manager").value;
-  let department = document.querySelector(".department").value;
   let email = document.querySelector(".email").value;
 
-  employeeName.innerText = firstName + " " + lastName;
-  employeeRole.innerText = title;
-  employeeManager.innerText = "Reports to " + manager + " at " + department;
-  employeeEmail.innerText = email;
+  if (
+    firstName.length > 0 &&
+    lastName.length > 0 &&
+    title.length > 0 &&
+    manager.length > 0 &&
+    email.length > 0
+  ) {
+    employeeName.innerText = firstName + " " + lastName;
+    employeeRole.innerText = title;
+    employeeManager.innerText = "Reports to " + manager;
+    employeeEmail.innerText = email;
 
-  employeeInfo.append(
-    employeeName,
-    employeeRole,
-    employeeManager,
-    employeeEmail
-  );
+    employeeInfo.append(
+      employeeName,
+      employeeRole,
+      employeeManager,
+      employeeEmail
+    );
 
-  document.querySelector("main").append(employeeInfo);
-  document.querySelector(".new_employee_box").classList.remove("hide");
-  document.querySelector(".employee_info_box").classList.remove("show");
+    document.querySelector("main").append(employeeInfo);
+    document.querySelector(".new_employee_box").classList.remove("hide");
+    document.querySelector(".employee_info_box").classList.remove("show");
 
-  form.reset();
+    form.reset();
+  } else {
+    alert("All Fields are required");
+  }
 };
