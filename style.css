@@ -22,6 +22,8 @@ main {
   flex-direction: column;
   align-items: center;
   background-color: #e2e2e2;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 .new_employee_box {
@@ -30,7 +32,7 @@ main {
   align-items: center;
   width: 60vw;
   height: 12vh;
-  margin-top: 8vh;
+  margin-top: 4vh;
   background-color: #a978e9;
   border-radius: 6px;
 }
@@ -63,8 +65,8 @@ button:active {
   flex-direction: column;
   align-items: center;
   width: 60vw;
-  margin-top: 8vh;
-  padding: 4% 2%;
+  margin-top: 4vh;
+  padding: 4%;
   background-color: #a978e9;
   border-radius: 6px;
 }
@@ -73,17 +75,11 @@ button:active {
   display: flex;
 }
 
-.info_row {
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-  margin-bottom: 2%;
-}
-
 .field_box {
   display: flex;
   flex-direction: column;
-  width: 48%;
+  width: 60%;
+  margin-bottom: 3vh;
 }
 
 label {
@@ -96,19 +92,14 @@ input[type="text"],
 input[type="email"] {
   border: none;
   border-radius: 4px;
-  padding: 3% 6%;
+  padding: 2%;
   font-size: 16px;
 }
 
 .buttons {
-  width: 90%;
   display: flex;
   justify-content: right;
-}
-
-.buttons .save,
-.buttons .cancel {
-  margin-top: 6%;
+  width: 60%;
 }
 
 .buttons .cancel {
@@ -131,8 +122,38 @@ input[type="email"] {
 .employee_details {
   width: 60vw;
   margin-top: 2vh;
-  padding: 1% 2%;
+  padding: 2% 4%;
   background-color: #5e0a71;
   border-radius: 6px;
   color: #fff;
+}
+
+.employee_details:last-child {
+  margin-bottom: 4vh;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+  .employee_info_box,
+  .new_employee_box,
+  .employee_details {
+    width: 90vw;
+  }
+
+  .buttons {
+    justify-content: space-between;
+  }
+
+  .new_employee_box button,
+  .buttons button {
+    padding: 4% 8%;
+  }
+
+  .employee_info_box .field_box,
+  .employee_info_box .buttons {
+    width: 90%;
+  }
+
+  .employee_details {
+    padding: 2% 6%;
+  }
 }
