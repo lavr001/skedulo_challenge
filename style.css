@@ -67,6 +67,7 @@ button:active {
 }
 
 .employee_info_box {
+  position: relative;
   display: none;
   flex-direction: column;
   align-items: center;
@@ -125,6 +126,14 @@ input[type="email"] {
   margin-left: 4%;
 }
 
+.required_fields {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  font-weight: 700;
+  font-size: 14px;
+}
+
 .employee_details {
   width: 60vw;
   margin-top: 2vh;
@@ -143,6 +152,10 @@ input[type="email"] {
   .new_employee_box,
   .employee_details {
     width: 90vw;
+  }
+
+  .employee_info_box {
+    padding: 8% 4% 6% 4%;
   }
 
   .buttons {
