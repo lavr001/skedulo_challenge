@@ -67,6 +67,7 @@ button:active {
 }
 
 .employee_info_box {
+  position: relative;
   display: none;
   flex-direction: column;
   align-items: center;
@@ -123,6 +124,14 @@ input[type="email"] {
 
 .buttons .save {
   margin-left: 4%;
+}
+
+.required_fields {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  font-weight: 700;
+  font-size: 14px;
 }
 
 .employee_details {
